@@ -1,10 +1,10 @@
-// components/ProjectsSection.tsx
+  // components/ProjectsSection.tsx
 
 'use client';
 
 import { motion } from 'framer-motion';
 import { projects } from '@/data/projects';
-import { FiGithub, FiExternalLink, FiFolder } from 'react-icons/fi';
+import { FiGithub, FiExternalLink } from 'react-icons/fi';
 import { useState } from 'react';
 
 const categories = ['All', 'Full Stack', 'Frontend', 'Mobile'];
@@ -136,35 +136,29 @@ export default function ProjectsSection() {
                 flexDirection: 'column',
               }}
             >
-              {/* Image Placeholder / Gradient */}
+              {/* Project Image */}
               <div
                 style={{
                   height: '200px',
-                  background: `linear-gradient(135deg, 
-                    ${index % 3 === 0 ? 'rgba(239,68,68,0.12)' : index % 3 === 1 ? 'rgba(220,38,38,0.12)' : 'rgba(185,28,28,0.12)'}, 
-                    rgba(0,0,0,0.3))`,
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
                   position: 'relative',
                   overflow: 'hidden',
+                  background: '#0a0a0a',
                 }}
               >
-                {/* Pattern Overlay */}
-                <div
-                  className="grid-bg"
+                <img
+                  src={project.image}
+                  alt={project.title}
                   style={{
-                    position: 'absolute',
-                    inset: 0,
-                    opacity: 0.6,
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                    transition: 'transform 0.5s ease',
                   }}
-                />
-                <FiFolder
-                  style={{
-                    fontSize: '3rem',
-                    color: 'rgba(255, 255, 255, 0.1)',
-                    position: 'relative',
-                    zIndex: 1,
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = 'scale(1.08)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = 'scale(1)';
                   }}
                 />
 

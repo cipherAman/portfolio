@@ -9,7 +9,7 @@ export const skills: Skill[] = [
     icon: '🎨',
     items: [
       { name: 'React', level: 90 },
-      { name: 'Next.js', level: 85 },
+      // { name: 'Next.js', level: 85 },
       { name: 'TypeScript', level: 85 },
       { name: 'JavaScript', level: 92 },
       { name: 'HTML/CSS', level: 95 },
@@ -30,17 +30,17 @@ export const skills: Skill[] = [
       { name: 'REST APIs', level: 88 },
     ],
   },
-  {
-    id: '3',
-    category: 'Mobile',
-    icon: '📱',
-    items: [
-      { name: 'Kotlin', level: 75 },
-      { name: 'Jetpack Compose', level: 70 },
-      { name: 'React Native', level: 65 },
-      { name: 'Material Design', level: 78 },
-    ],
-  },
+  // {
+  //   id: '3',
+  //   category: 'Mobile',
+  //   icon: '📱',
+  //   items: [
+  //     { name: 'Kotlin', level: 75 },
+  //     { name: 'Jetpack Compose', level: 70 },
+  //     { name: 'React Native', level: 65 },
+  //     { name: 'Material Design', level: 78 },
+  //   ],
+  // },
   {
     id: '4',
     category: 'Tools & DevOps',
@@ -50,7 +50,6 @@ export const skills: Skill[] = [
       { name: 'VS Code', level: 92 },
       { name: 'Docker', level: 60 },
       { name: 'Vercel', level: 85 },
-      { name: 'Figma', level: 70 },
       { name: 'Linux', level: 78 },
     ],
   },

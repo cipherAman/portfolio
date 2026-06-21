@@ -5,11 +5,11 @@ import { Experience, Education } from '@/types';
 export const experiences: Experience[] = [
   {
     id: '1',
-    company: 'Tech Startup',
+    company: 'TechXquad',
     role: 'Frontend Developer Intern',
-    period: 'May 2025 – Present',
+    period: 'June 2025 – July 2025',
     description:
-      'Contributing to the development of customer-facing web applications using React and TypeScript.',
+      'Contributing to the development of customer-facing web applications using React .',
     highlights: [
       'Built responsive UI components reducing page load time by 30%',
       'Collaborated with design and backend teams in an agile workflow',
@@ -18,30 +18,16 @@ export const experiences: Experience[] = [
     type: 'internship',
   },
   {
-    id: '2',
-    company: 'Freelance',
-    role: 'Full Stack Developer',
-    period: 'Jan 2025 – Apr 2025',
-    description:
-      'Delivered web solutions for small businesses, handling end-to-end development.',
-    highlights: [
-      'Developed 3 production websites with Next.js and Tailwind CSS',
-      'Integrated payment gateways and CMS solutions',
-      'Managed client communication and project timelines independently',
-    ],
-    type: 'freelance',
-  },
-  {
     id: '3',
-    company: 'University Tech Club',
-    role: 'Web Development Lead',
-    period: 'Aug 2024 – Dec 2024',
+    company: 'Team Udaan',
+    role: 'Web Development member',
+    period: 'Aug 2024 – ongoing',
     description:
-      'Led a team of 5 developers to build and maintain the club\'s web presence and internal tools.',
+      'Contributing to the development and maintenance of web projects as part of the team.',
     highlights: [
-      'Mentored junior developers on React and Git workflows',
-      'Organized 4 workshops on modern web development',
-      'Built event management system used by 500+ students',
+      'Collaborated with team members on React-based web applications',
+      'Participated in workshops and hackathons on modern web development',
+      'Helped build and maintain web tools used by 500+ students',
     ],
     type: 'academic',
   },
@@ -56,7 +42,7 @@ export const education: Education[] = [
     period: '2024 – 2028',
     grade: 'CGPA: 7.1',
     highlights: [
-      'Member of Team Udaan'
+      'Student Coordinator of Team Udaan'
     ],
   },
 ];

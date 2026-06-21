@@ -23,10 +23,14 @@ export default function ProjectCard({ project, index = 0 }: ProjectCardProps) {
     >
       {/* Image Container */}
       <div className="relative h-48 overflow-hidden bg-gray-800">
+        <Image
+          src={project.image}
+          alt={project.title}
+          fill
+          className="object-cover transition-transform duration-500 group-hover:scale-110"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
         <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-        <p className="absolute inset-0 flex items-center justify-center text-gray-500">
-          [Project Image]
-        </p>
       </div>
 
       {/* Content */}
